@@ -14,3 +14,6 @@ As a project manager, I want to know the time between when an API specification 
 As a project manager or owner, I want a list of all MuleSoft Exchange Assets that have inadequate documentation as defined as having less than 80 characters.
 - For large numbers of assets, this report will need to use page sizes to limit the number of APIs returned on each call and multiple calls for each page is required.
 
+## PolicyAccessViolations.py: List API that had a access policy violation in the past 30 days
+### User story
+As a support or security personnel, I want to a list of all MuleSoft managed APIs that have client ID/secret, OAuth, or OpenID Connect access violations, and the corresponding API Policy instance that was violated, for the past 30 days.  The the total number of violations for each API.  In addition, I want to know the total number of violations for each API Policy.
