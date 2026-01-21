@@ -17,3 +17,11 @@ As a project manager or owner, I want a list of all MuleSoft Exchange Assets tha
 ## PolicyAccessViolations.py: List API that had a access policy violation in the past 30 days
 ### User story
 As a support or security personnel, I want to a list of all MuleSoft managed APIs that have client ID/secret, OAuth, or OpenID Connect access violations, and the corresponding API Policy instance that was violated, for the past 30 days.  The the total number of violations for each API.  In addition, I want to know the total number of violations for each API Policy.
+
+## ApiGovExceptions.py: List governed API in an organization that do not conform to the set rules. 
+### User story
+As a project manager or owner, I want to a list of all the published or implemented API specifications that are monitored by MuleSoft API Governance that do not conform to my API Governance defined code or API policies.
+
+NOTE:
+- Currently, you need to use an authorized user auth_token to access to the API Governance API.  User the https://anypoint.mulesoft.com/accounts/login API to get the auth_token.
+- This example is working on a basic level, but the conformance detection logic needs reworking.
